@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: font1;
+            src: url(./Poppins-Regular.ttf);
+        }
+    </style>
     <title>Stop || Watch</title>
 </head>
 
 <body class="bg-zinc-900">
-    <div class="min-h-screen w-full bg-zinc-900 flex items-center justify-center flex-col text-white font-[gilroy] px-20 py-10 max-md:px-10">
+    <div class="min-h-screen w-full bg-zinc-900 flex items-center justify-center flex-col text-white font-[font1] px-20 py-10 max-md:px-10 tracking-tighter">
         <h1 class="text-4xl font-semibold max-md:text-6xl text-center">Stop Watch</h1>
         <h1 class="text-9xl select-none my-9 max-md:text-8xl max-sm:text-6xl">
-            <span id="sec">00</span>:<span id="min">00</span>:<span id="hrs">00</span>
+            <span id="sec" class="tracking-tighter">00</span>:<span id="min" class="tracking-tighter">00</span>:<span id="hrs" class="tracking-tighter">00</span>
         </h1>
         <div class="flex items-center justify-between gap-20 max-md:gap-1 max-md:flex-wrap">
             <button id="start"
