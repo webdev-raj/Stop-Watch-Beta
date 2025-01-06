@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const second = document.querySelector("#sec")
     const minuts = document.querySelector("#min")
     const hrs = document.querySelector("#hrs")
+    const listContainer = document.querySelector("#listContainer")
     let hr = 0
     let min = 0
     let sec = 0
@@ -35,6 +36,14 @@ window.addEventListener("DOMContentLoaded", function () {
     })
     stopBtn.addEventListener("click", function () {
         clearInterval(intervalId)
+        let storeSec = second.textContent
+        let storeMin = minuts.textContent
+        let storeHr = hrs.textContent
+        let listItem = document.createElement("li")
+        listItem.innerHTML = `<h1 class="text-2xl">${storeSec}:${storeMin}:${storeHr}</h1>`
+        console.log(listItem)
+        listItem.classList.add("flex","items-center","justify-center","w-full")
+        listContainer.appendChild(listItem)
     })
     resetBtn.addEventListener("click", function () {
         sec = 0
