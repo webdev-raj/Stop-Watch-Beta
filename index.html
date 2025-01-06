@@ -9,10 +9,12 @@
 </head>
 
 <body class="bg-zinc-900">
-    <div class="min-h-screen w-full bg-zinc-900 flex items-center justify-center flex-col text-white font-[font1] px-20 py-16 max-md:px-5 tracking-tighter">
+    <div
+        class="min-h-screen w-full bg-zinc-900 flex items-center justify-center flex-col text-white font-[font1] px-20 py-16 max-md:px-5 tracking-tighter">
         <h1 class="text-4xl font-semibold max-md:text-6xl text-center">Stop Watch</h1>
         <h1 class="text-9xl select-none my-9 max-md:text-8xl max-sm:text-6xl">
-            <span id="sec" class="tracking-tighter" title="Second">00</span>:<span id="min" class="tracking-tighter" title="Minutes">00</span>:<span id="hrs" class="tracking-tighter" title="Hours">00</span>
+            <span id="sec" class="tracking-tighter" title="Second">00</span>:<span id="min" class="tracking-tighter"
+                title="Minutes">00</span>:<span id="hrs" class="tracking-tighter" title="Hours">00</span>
         </h1>
         <div class="flex items-center justify-between gap-20 max-md:gap-1 max-md:flex-wrap">
             <button id="start"
@@ -25,14 +27,18 @@
         <div class="min-h-[50vh] w-3/4 rounded-xl border-2 mt-7 text-center max-md:w-full py-5 px-10 max-md:px-5">
             <div class="flex items-center justify-between">
                 <h1 class="text-3xl font-semibold max-md:text-xl">Recorded Times</h1>
-                <button id="clearHistory" class="text-lg cursor-pointer px-3 border-2 border-gray-400 rounded-full py-1 active:scale-105 duration-75 ease-out max-md:px-3 max-md:border max-md:text-[0.9rem]">Clear History</button>
+                <button id="clearHistory"
+                    class="text-lg cursor-pointer px-3 border-2 border-gray-400 rounded-full py-1 active:scale-105 duration-75 ease-out max-md:px-3 max-md:border max-md:text-[0.9rem]">Clear
+                    History</button>
             </div>
             <ul id="listContainer" class="list-none mt-5">
             </ul>
         </div>
     </div>
+
     <footer class="w-full py-8 font-[font1] bg-zinc-800 max-md:py-5">
-        <h2 class="text-xl font-semibold text-center text-white">Note: The recorded times are only available after stopping the stop watch.</h2>
+        <h2 class="text-xl font-semibold text-center text-white">Note: The recorded times are only available after
+            stopping the stop watch.</h2>
     </footer>
     <script src="script.js"></script>
 </body>

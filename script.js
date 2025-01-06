@@ -43,8 +43,11 @@ window.addEventListener("DOMContentLoaded", function () {
         let listItem = document.createElement("li")
         let messages = prompt("reason for stop")
         console.log(messages)
-        listItem.innerHTML = `<div class="py-2 text-gray-300 border-b-2 border-white w-full flex items-center justify-between capitalize gap-5"><h1 class="text-2xl w-fit">${messages}</h1>
-        <h1 class="text-2xl">${storeSec}:${storeMin}:${storeHr}</h1> </div>`
+        listItem.innerHTML = ` <div
+            class="select-none py-2 text-gray-300 border-b-2 border-white w-full flex items-center justify-between capitalize gap-5">
+            <h1 class="text-2xl w-fit">${messages}</h1>
+            <h1 class="text-2xl">${storeSec}:${storeMin}:${storeHr}</h1>
+        </div>`
         console.log(listItem)
         listItem.classList.add("flex", "items-center", "justify-center", "w-full")
         listContainer.appendChild(listItem)
@@ -58,7 +61,7 @@ window.addEventListener("DOMContentLoaded", function () {
         hrs.innerHTML = "00"
         clearInterval(intervalId)
     })
-    clearHistory.addEventListener("click",()=>{
-        listContainer.replaceChild()
+    clearHistory.addEventListener("click", () => {
+        listContainer.innerHTML = ""
     })
 })
