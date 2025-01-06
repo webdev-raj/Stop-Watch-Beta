@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", function () {
         let messages = prompt("reason for stop")
         console.log(messages)
         listItem.innerHTML = ` <div
-            class="select-none py-2 text-gray-300 border-b-2 border-white w-full flex items-center justify-between capitalize gap-5">
+            class="select-none py-2 text-gray-400 border-b-2 border-black w-full flex items-center justify-between capitalize gap-5">
             <h1 class="text-2xl w-fit">${messages}</h1>
             <h1 class="text-2xl">${storeSec}:${storeMin}:${storeHr}</h1>
         </div>`
