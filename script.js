@@ -40,9 +40,14 @@ window.addEventListener("DOMContentLoaded", function () {
         let storeMin = minuts.textContent
         let storeHr = hrs.textContent
         let listItem = document.createElement("li")
-        listItem.innerHTML = `<h1 class="text-2xl">${storeSec}:${storeMin}:${storeHr}</h1>`
+        let messages = prompt("reason for stop")
+        console.log(messages)
+        listItem.innerHTML = `<div class="py-2 text-gray-300 border-b-2 w-full flex items-center justify-between capitalize gap-5">
+            <h1 class="text-2xl w-fit">${messages}</h1>
+            <h1 class="text-2xl">${storeSec}:${storeMin}:${storeHr}</h1> 
+        </div>`
         console.log(listItem)
-        listItem.classList.add("flex","items-center","justify-center","w-full")
+        listItem.classList.add("flex", "items-center", "justify-center", "w-full")
         listContainer.appendChild(listItem)
     })
     resetBtn.addEventListener("click", function () {

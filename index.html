@@ -4,16 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @font-face {
-            font-family: font1;
-            src: url(./Poppins-Regular.ttf);
-        }
-        ::-webkit-scrollbar{
-            display: none !important;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Stop || Watch</title>
 </head>
 
@@ -21,7 +12,7 @@
     <div class="min-h-screen w-full bg-zinc-900 flex items-center justify-center flex-col text-white font-[font1] px-20 py-16 max-md:px-5 tracking-tighter">
         <h1 class="text-4xl font-semibold max-md:text-6xl text-center">Stop Watch</h1>
         <h1 class="text-9xl select-none my-9 max-md:text-8xl max-sm:text-6xl">
-            <span id="sec" class="tracking-tighter">00</span>:<span id="min" class="tracking-tighter">00</span>:<span id="hrs" class="tracking-tighter">00</span>
+            <span id="sec" class="tracking-tighter" title="Second">00</span>:<span id="min" class="tracking-tighter" title="Minutes">00</span>:<span id="hrs" class="tracking-tighter" title="Hours">00</span>
         </h1>
         <div class="flex items-center justify-between gap-20 max-md:gap-1 max-md:flex-wrap">
             <button id="start"
@@ -40,6 +31,9 @@
             </ul>
         </div>
     </div>
+    <footer class="w-full py-8 font-[font1] bg-zinc-800 max-md:py-5">
+        <h2 class="text-xl font-semibold text-center text-white">Note: The recorded times are only available after stopping the stop watch.</h2>
+    </footer>
     <script src="script.js"></script>
 </body>
 
