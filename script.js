@@ -46,13 +46,13 @@ window.addEventListener("DOMContentLoaded", function () {
             listItem.innerHTML = `<div id="li"
             class="select-none py-2 text-gray-400 border-b-2 border-black w-full flex items-center justify-between capitalize gap-5">
             <h1 class="text-2xl w-fit">Stop Time</h1>
-            <h1 class="text-2xl">${storeSec}:${storeMin}:${storeHr}</h1>
+            <h1 class="text-2xl">${storeHr}:${storeMin}:${storeSec}</h1>
         </div>`
         }else{
             listItem.innerHTML = `<div id="li"
             class="select-none py-2 text-gray-400 border-b-2 border-black w-full flex items-center justify-between capitalize gap-5">
-            <h1 class="text-2xl w-fit">${messages}</h1>
-            <h1 class="text-2xl">${storeSec}:${storeMin}:${storeHr}</h1>
+            <h1 class="text-2xl w-fit max-md:text-xl">${messages}</h1>
+            <h1 class="text-2xl max-md:text-xl">${storeHr}:${storeMin}:${storeSec}</h1>
         </div>`
         }
         listItem.classList.add("flex", "items-center", "justify-center", "w-full")
