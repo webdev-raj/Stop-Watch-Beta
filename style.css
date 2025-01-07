@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
     font-family: font1;
-    src: url(./Poppins-Regular.ttf);
+    src: url("./Assets/fonts/Poppins-Regular.ttf");
 }
 ::-webkit-scrollbar{
     display: none !important;
